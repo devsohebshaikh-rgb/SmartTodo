@@ -1,0 +1,25 @@
+<!-- Add these keys to your iOS Info.plist -->
+
+<!-- Location Permissions -->
+<key>NSLocationWhenInUseUsageDescription</key>
+<string>Smart Todo needs your location to remind you of tasks when you arrive at specific places.</string>
+
+<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+<string>Smart Todo needs background location access to alert you when you are near a task location, even when the app is not open.</string>
+
+<key>NSLocationAlwaysUsageDescription</key>
+<string>Smart Todo needs background location access to alert you when you are near a task location.</string>
+
+<!-- Background Modes -->
+<key>UIBackgroundModes</key>
+<array>
+    <string>fetch</string>
+    <string>location</string>
+    <string>processing</string>
+    <string>remote-notification</string>
+</array>
+
+<!-- Google Maps API Key -->
+<!-- Add to AppDelegate.swift:
+   GMSServices.provideAPIKey("YOUR_GOOGLE_MAPS_API_KEY_HERE")
+-->
